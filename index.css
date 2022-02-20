@@ -63,6 +63,48 @@ body {
   height: 100%;
 }
 
+button.accordion {
+  background-color: #d8f2de;
+  margin-left: 100px;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+button.accordion.active,
+button.accordion:hover {
+  background-color: lightblue;
+}
+
+div.panel {
+  padding: 0 18px;
+  margin-left: 100px;
+  background-color: lightblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.section-color {
+  height: 80px;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.lightBlue {
+  background-color: lightblue;
+}
+
 .row {
   display: flex;
   border-bottom: 1px solid black;

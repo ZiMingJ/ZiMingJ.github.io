@@ -15,31 +15,49 @@
       <ul class="menu-items">
         <li>
           <a href="https://vancouver.northeastern.edu/" target="_blank"
-            ><img src="./NEU.svg" width="50px" alt="Northeastern logo"
+            ><img src="./images/NEU.svg" width="50px" alt="Northeastern logo"
           /></a>
         </li>
         <li><a href="./index.html">Home Page</a></li>
         <li><a href="./index2.html">Album</a></li>
         <li><a href="./index3.html">Contact Me</a></li>
+        <li>
+          <a href="javascript:void(0)" id="insert" data-color="lightBlue"
+            >Add One Light Blue</a
+          >
+        </li>
+        <li>
+          <a href="javascript:void(0)" id="delete">Rmove One Light Blue</a>
+        </li>
       </ul>
     </nav>
+    <div>
+      <code id="subject" />
+    </div>
     <div>
       <table class="avatar">
         <tr>
           <td>
             <div class="profile-image">
-              <img src="./profile.jpg" alt="profile" />
+              <img src="./images/profile.jpg" alt="profile" />
             </div>
           </td>
           <td>
-            <h2>Ziming Jia</h2>
+            <div id="name"><h2>Ziming Jia</h2></div>
+            <button id="changeColor">
+              Add/Remove the Background Color of My Name
+            </button>
             <h3>MSCS student at Northeastern University, Vancouver</h3>
           </td>
         </tr>
       </table>
     </div>
     <div class="intend">
-      <h3>Self Intro</h3>
+      <h3>Click the buttons below to see the hidden part</h3>
+    </div>
+
+    <button class="accordion">I: Self Intro</button>
+    <div class="panel">
       <p>
         I am a result-oriented and self-motivated senior student with 4+
         years<br />
@@ -48,21 +66,24 @@
         quality products and working with developers and developer tools.
       </p>
     </div>
-    <div class="intend">
-      <h3>Skills</h3>
+
+    <button class="accordion">II: Skills</button>
+    <div class="panel">
       <ol>
         <li><b>languages:</b> <i>Java, Python, C</i></li>
         <li><b>Database:</b> <i>AWS, MySQL</i></li>
-        <li><b>Version Control:</b> <i></i>Git, GitHub</i></li>
+        <li><b>Version Control:</b> <i>Git, GitHub</i></li>
       </ol>
     </div>
-    <div class="intend">
-      <h3>Courses</h3>
+
+    <button class="accordion">III: Courses</button>
+    <div class="panel">
       <ul>
         <li>Programming Design Pattern</li>
         <li>Mobile Development</li>
         <li>Data Structure and Algorithms</li>
       </ul>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
